@@ -6,9 +6,12 @@
 * GitHub: https://github.com/Daria-Uvarkina
 * Telegram: @UDD89
 
+## Summary:
+
+
 ## Education and courses:
 * Magistr, Tomsk Polytechnic University, Chemical Technology
-* Rolling School *in progress*
+* The Rolling Scopes School *in progress*
 * CodeWars *in progress*
 
 ## Experience
