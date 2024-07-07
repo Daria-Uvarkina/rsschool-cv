@@ -1,0 +1,1 @@
+https://github.com/Daria-Uvarkina/rsschool-cv/blob/rsschool-cv-html/index.html

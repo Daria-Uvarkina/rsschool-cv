@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "BodoniModaSC";
+    src: url("assets/BodoniModaSC-VariableFont_opsz,wght.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "BodoniModaSC";
+    src: url("assets/BodoniModaSC-Italic-VariableFont_opsz,wght.ttf");
+    font-weight: 300;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+body {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    font-family: "BodoniModaSC";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#profile {
+    flex-direction: row;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article {
+    width: 100%;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    color: black;
+}
+
+.section {
+    width: 50%;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .article {
+        width: 100%;
+    }
+
+    .section {
+      width: 100%;
+    }
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: 25px;
+}

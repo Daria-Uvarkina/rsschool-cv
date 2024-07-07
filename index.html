@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contact details</a></li>
+                <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education and courses</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                <li class="nav-item"><a href="#code" class="nav-link">Code example</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article class="profile" id="profile">
+        <h1>Daria Uvarkina</h1>
+        <h2>Junior front-end developer</h2>
+        <img alt="Photo" src="img/IMG_7789.jpg" style="width: 350px;height: 400px;">
+    </article>
+    <main class="main-container">
+         <section class="contacts" id="#contacts">
+            <h2>Contact details</h2>
+            <ul class="contact-list">
+                <li>Phone: +7 913 003 33 45</li>
+                <li>Email: dina8908@gmail.com</li>
+                <li>Telegram: @UDD89</li>
+            </ul>
+        </section>
+
+        <section class="summary" id="#summary">
+            <h2>Summary</h2>
+            <p>I'm just starting my way in front-end development.</p>
+            <p>It's possible that I still don't know many things.</p>
+            <p>I believe in myself and want to start doing many new projects.</p>
+        </section>
+
+        <section class="education" id="#education">
+            <h2>Education and courses</h2>
+            <ul>
+                <li><a href="https://tpu.ru/en/" class="link">Magistr, Tomsk Polytechnic University, Chemical Technology</a></li>
+                <li><a href="https://rs.school/courses/javascript-preschool-ru" class="link">The RS School: Pre-school in progress</a></li>
+                <li><a href="https://www.codewars.com/" class="link">Codewars in progress</a></li>
+            </ul>
+        </section>
+
+        <section class="experience" id="#experience">
+            <h2>Experience</h2>
+            <p>2013-up to date</p>  
+            <p>Boreskov Institute of Catalysis</p>
+            <p>Key results and achivements: learning; stress resistance; intelligence; setting and solving problems; communication; working with big amount of information; analysis; presentations.</p>
+        </section>
+
+        <section class="skills" id="#skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java Basics</li>
+                <li>MySQL basics</li>
+                <li>Git, GitHub</li>
+                <li>JSON, HTML, CSS basics</li>
+                <li>Javascript basics</li>
+                <li>MS Office</li>
+                <li>MacOS, Windows</li>
+            </ul>
+        </section>
+
+        <section class="#languages" id="#languages">
+            <h2>Languages</h2>
+            <ul>
+                <li>English - B1</li>
+                <li>Russian - native</li>
+            </ul>
+        </section>
+        <section class="code" id="#code">
+            <h2>Code example</h2>
+            <pre>
+                public class NextDate {
+                    public static int getFebruaryDaysAmount(int year) {
+                        if (((year % 4 != 0) || (year % 100 == 0)) && (year % 400 != 0)) {
+                            return 28;
+                        }
+                
+                        return 29;
+                    }
+                
+                    public static int getDaysAmount(int month, int year) {
+                        return switch (month) {
+                            case 4, 6, 9, 11 -> 30;
+                            case 2 -> getFebruaryDaysAmount(year);
+                            default -> 31;
+                        };
+                    }
+                
+                    public static void main(String[] args) {
+                        Scanner scanner = new Scanner(System.in);
+                
+                        System.out.println("Введите день:");
+                        int day = scanner.nextInt();
+                
+                        System.out.println("Введите месяц:");
+                        int month = scanner.nextInt();
+                
+                        System.out.println("Введите год:");
+                        int year = scanner.nextInt();
+                
+                        int maximumDaysAmount = getDaysAmount(month, year);
+                
+                        if (month < 1 || month >= 13 || day < 1 || day > maximumDaysAmount) {
+                            System.out.println("Некорректная дата");
+                        } else {
+                            day++;
+                
+                            if (day <= maximumDaysAmount) {
+                                System.out.printf("Следующая дата - %02d.%02d.%d", day, month, year);
+                            } else if (month < 12) {
+                                day = 1;
+                                month++;
+                                System.out.printf("Следующая дата - %02d.%02d.%d", day, month, year);
+                            } else {
+                                day = 1;
+                                month = 1;
+                                year++;
+                                System.out.printf("Следующая дата - %02d.%02d.%d", day, month, year);
+                            }
+                        }
+                    }
+                }
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <span><a href="https://github.com/Daria-Uvarkina" class="link"><img alt="github-logo" src="img/git.ico"></a></span>
+        <span>2024</span>
+        <span><a href="https://rs.school/courses/javascript-preschool-ru" class="link"><img alt="RSSchool-Logotype" src="img/logo.ico"></a></span>
+    </footer>
+</body>
+</html>
