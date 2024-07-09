@@ -80,7 +80,7 @@
         </section>
         <section class="code" id="#code">
             <h2>Code example</h2>
-            <pre>
+            <pre><code>
                 public class NextDate {
                     public static int getFebruaryDaysAmount(int year) {
                         if (((year % 4 != 0) || (year % 100 == 0)) && (year % 400 != 0)) {
@@ -112,14 +112,14 @@
                 
                         int maximumDaysAmount = getDaysAmount(month, year);
                 
-                        if (month < 1 || month >= 13 || day < 1 || day > maximumDaysAmount) {
+                        if (month &lt 1 || month >= 13 || day &lt 1 || day > maximumDaysAmount) {
                             System.out.println("Некорректная дата");
                         } else {
                             day++;
                 
-                            if (day <= maximumDaysAmount) {
+                            if (day &lt= maximumDaysAmount) {
                                 System.out.printf("Следующая дата - %02d.%02d.%d", day, month, year);
-                            } else if (month < 12) {
+                            } else if (month &lt 12) {
                                 day = 1;
                                 month++;
                                 System.out.printf("Следующая дата - %02d.%02d.%d", day, month, year);
@@ -132,7 +132,7 @@
                         }
                     }
                 }
-            </pre>
+            </code></pre>
         </section>
     </main>
     <footer>
